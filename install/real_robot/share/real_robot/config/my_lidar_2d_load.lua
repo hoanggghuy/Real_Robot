@@ -1,0 +1,1 @@
+/home/huy/Real_Robot/config/my_lidar_2d_load.lua

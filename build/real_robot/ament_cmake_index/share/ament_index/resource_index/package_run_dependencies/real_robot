@@ -1,0 +1,1 @@
+launch_ros;navigation2;nav2_common;slam_toolbox;rclpy;geometry_msgs;sensor_msgs;cv_bridge;python3-opencv;ament_lint_common;ament_lint_auto;ament_cmake_gtest;ament_cmake_pytest;launch;launch_testing

@@ -8,7 +8,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     pkg_name = 'real_robot'
     pkg_dir = get_package_share_directory(pkg_name)
-    configuration_basename = 'my_lidar_2d_load.lua'
+    configuration_basename = 'my_lidar_2d.lua'
 
     use_sim_time_arg = DeclareLaunchArgument(
         'use_sim_time',

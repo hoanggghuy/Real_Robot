@@ -18,7 +18,7 @@ options = {
   num_multi_echo_laser_scans = 0,
   num_subdivisions_per_laser_scan = 1,
   num_point_clouds = 0,
-  lookup_transform_timeout_sec = 0.2,
+  lookup_transform_timeout_sec = 0.5,
   submap_publish_period_sec = 0.3,
   pose_publish_period_sec = 5e-3,
   trajectory_publish_period_sec = 30e-3,
@@ -31,13 +31,29 @@ options = {
 
 MAP_BUILDER.use_trajectory_builder_2d = true
 MAP_BUILDER.num_background_threads = 4
+
+
 TRAJECTORY_BUILDER_2D.min_range = 0.3
 TRAJECTORY_BUILDER_2D.max_range = 12   
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 3.0
 TRAJECTORY_BUILDER_2D.use_imu_data = false 
+TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 4e5
+TRAJECTORY_BUILDER_2D.num_accumulated_range_data = 1
+TRAJECTORY_BUILDER_2D.voxel_filter_size = 0.01
+
+
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true 
-TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.linear_search_window = 0.1
-TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.angular_search_window = math.rad(20.)
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.linear_search_window = 0.2
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.angular_search_window = math.rad(20.0)
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.translation_delta_cost_weight = 1e-1  -- 1e-1
+TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.rotation_delta_cost_weight = 1e-1   -- 1e-1
+
+TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 5.   -- 5.
+TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.2   -- 0.2
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(1.0)   -- math.rad(0.1)
+
+
+POSE_GRAPH.optimization_problem.odometry_rotation_weight = 0
 -- TRAJECTORY_BUILDER.pure_localization_trimmer = {
 --   max_submaps_to_keep = 3,
 -- }

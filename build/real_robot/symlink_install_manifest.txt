@@ -1,3 +1,4 @@
+/home/huy/Real_Robot/install/real_robot/share/real_robot/config/mapper_params_online_async.yaml
 /home/huy/Real_Robot/install/real_robot/share/real_robot/config/my_lidar_2d.lua
 /home/huy/Real_Robot/install/real_robot/share/real_robot/config/my_lidar_2d_load.lua
 /home/huy/Real_Robot/install/real_robot/share/real_robot/config/nav2_params.yaml
@@ -10,8 +11,11 @@
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/cartographer.launch.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/launch_gazebo.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/launch_rviz2.py
+/home/huy/Real_Robot/install/real_robot/share/real_robot/launch/localization_amcl.py
+/home/huy/Real_Robot/install/real_robot/share/real_robot/launch/localization_carto.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/navigation_launch.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/rsp.launch.py
+/home/huy/Real_Robot/install/real_robot/share/real_robot/launch/slam_tool_box.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/launch/twist_mux.launch.py
 /home/huy/Real_Robot/install/real_robot/share/real_robot/rviz2/real_robot.rviz
 /home/huy/Real_Robot/install/real_robot/share/ament_index/resource_index/package_run_dependencies/real_robot

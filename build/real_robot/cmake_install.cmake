@@ -1,8 +1,8 @@
-# Install script for directory: /home/huy/Real_Robot
+# Install script for directory: /home/huy/real_robot/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/huy/Real_Robot/install/real_robot")
+  set(CMAKE_INSTALL_PREFIX "/home/huy/real_robot/src/install/real_robot")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/huy/Real_Robot/build/real_robot/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/huy/real_robot/src/build/real_robot/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/huy/Real_Robot/build/real_robot/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/huy/real_robot/src/build/real_robot/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

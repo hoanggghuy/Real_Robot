@@ -1,1 +1,1 @@
-/home/huy/Real_Robot/build/real_robot/ament_cmake_environment_hooks/local_setup.sh
+/home/huy/real_robot/src/build/real_robot/ament_cmake_environment_hooks/local_setup.sh

@@ -1,1 +1,1 @@
-/home/huy/Real_Robot/launch/rsp.launch.py
+/home/huy/real_robot/src/launch/rsp.launch.py

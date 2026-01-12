@@ -1,1 +1,1 @@
-/home/huy/Real_Robot/launch/navigation_launch.py
+/home/huy/real_robot/src/launch/navigation_launch.py

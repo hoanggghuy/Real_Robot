@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/huy/Real_Robot
+CMAKE_SOURCE_DIR = /home/huy/real_robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/huy/Real_Robot/build/real_robot
+CMAKE_BINARY_DIR = /home/huy/real_robot/src/build/real_robot
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/Real_Robot/build/real_robot/CMakeFiles /home/huy/Real_Robot/build/real_robot//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/real_robot/src/build/real_robot/CMakeFiles /home/huy/real_robot/src/build/real_robot//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/Real_Robot/build/real_robot/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/huy/real_robot/src/build/real_robot/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

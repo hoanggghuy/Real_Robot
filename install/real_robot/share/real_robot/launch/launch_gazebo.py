@@ -1,1 +1,1 @@
-/home/huy/Real_Robot/launch/launch_gazebo.py
+/home/huy/real_robot/src/launch/launch_gazebo.py

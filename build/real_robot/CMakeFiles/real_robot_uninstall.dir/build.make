@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/huy/Real_Robot
+CMAKE_SOURCE_DIR = /home/huy/real_robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/huy/Real_Robot/build/real_robot
+CMAKE_BINARY_DIR = /home/huy/real_robot/src/build/real_robot
 
 # Utility rule file for real_robot_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/real_robot_uninstall.dir/compiler_depend.make
 include CMakeFiles/real_robot_uninstall.dir/progress.make
 
 CMakeFiles/real_robot_uninstall:
-	/usr/bin/cmake -P /home/huy/Real_Robot/build/real_robot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/huy/real_robot/src/build/real_robot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 real_robot_uninstall: CMakeFiles/real_robot_uninstall
 real_robot_uninstall: CMakeFiles/real_robot_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/real_robot_uninstall.dir/clean:
 .PHONY : CMakeFiles/real_robot_uninstall.dir/clean
 
 CMakeFiles/real_robot_uninstall.dir/depend:
-	cd /home/huy/Real_Robot/build/real_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/huy/Real_Robot /home/huy/Real_Robot /home/huy/Real_Robot/build/real_robot /home/huy/Real_Robot/build/real_robot /home/huy/Real_Robot/build/real_robot/CMakeFiles/real_robot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/huy/real_robot/src/build/real_robot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/huy/real_robot/src /home/huy/real_robot/src /home/huy/real_robot/src/build/real_robot /home/huy/real_robot/src/build/real_robot /home/huy/real_robot/src/build/real_robot/CMakeFiles/real_robot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/real_robot_uninstall.dir/depend
 

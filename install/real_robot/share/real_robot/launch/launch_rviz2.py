@@ -1,1 +1,1 @@
-/home/huy/Real_Robot/launch/launch_rviz2.py
+/home/huy/real_robot/src/launch/launch_rviz2.py

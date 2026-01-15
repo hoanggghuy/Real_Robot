@@ -69,7 +69,7 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
             'load_state_filename': load_state_filename,
             'configuration_basename': carto_config
-        }
+        }.items()
     )
 
     navigation = IncludeLaunchDescription(
